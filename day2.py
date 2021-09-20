@@ -55,7 +55,7 @@ print(bmi)
 '''
 Formating using f-string
 
-f"your score is {score}"
+f'your score is {score}'
 
 
 score = 9
