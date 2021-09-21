@@ -205,7 +205,7 @@ name1 = "Angela Yu"
 
 name2 = "Jack Bauer"
 #https://replit.com/@ZeroPatch/day-3-5-exercise-1#main.py
-''' 
+
 
 print ("Welcome to the love calculator!")
 
@@ -248,5 +248,38 @@ else:
     #https://app.diagrams.net/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #https://ascii.co.uk/art
+''' 
+
+print('''
+                     __
+          ..=====.. |==|
+          ||     || |= |
+       _  ||     || |^*| _
+      |=| o=,===,=o |__||=|
+      |_|  _______)~`)  |_|
+          [=======]  ()       ldb
+''')
+print('Welcome to treasure island')
+
+choice = input("Enter left or right? ");
+
+if choice.lower() =="left":
+    choice2=input("Do you want to swim or wait: ")
+
+    if choice2.lower()== "wait":
+        choice3 = input("Whic door, Red, yellow, blue or your choice");
+
+        if choice3.lower() =="yellow":
+            print("You win!");
+        elif choice3.lower() =="blue":
+            print("eaten by beast")
+        elif choice3.lower() =="red":
+            print("Burned by fire")
+        else:
+            print("Game Over")
+    else:
+        print("Attacked by trout! Game over")
+else:
+    print("Fall in hole: Game over")
 
 
