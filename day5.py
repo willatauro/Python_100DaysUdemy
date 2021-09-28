@@ -53,7 +53,7 @@ for n in range(1,101):
     sum += n
 
 print(sum)
-'''
+
  #write a program that calculates the sum of all the even numbers from 1 to 100
 # other way is range(2,101,2) make the step size to 2
 
@@ -62,3 +62,52 @@ for n in range(1,101):
     if n%2==0:
         sum += n
 print(sum)
+
+#FizzBuzz
+print("Welcome to FizzBuzz problem")
+
+for i in range(1,101):
+
+  if i%3==0 and i%5==0:
+    print("FizzBuzz")
+  elif i%3==0:
+    print ("Fizz")
+  elif i%5==0:
+    print ("Buzz")
+  else:
+    print(i)
+'''
+
+import random
+print("Welcome to PyPassword Generator!")
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+nr_letters = int(input("How many leters would you like in your password: "))
+nr_sym = int(input("How many symbols would you like? "))
+nr_num = int(input("How many number would you like? "))
+
+# Create a list and use append and random to pick up random indexes from list
+pwd =[]
+for l in range(1,nr_letters+1):
+  #pwd.append(letters[random.randint(0,l)])
+  pwd.append(random.choice(letters));
+  
+for s in range(1,nr_sym+1):
+  pwd.append(random.choice(symbols))
+
+for n in range(1, nr_num+1):
+  pwd.append(random.choice(numbers))
+  
+#print(pwd)
+# shuffle the list
+random.shuffle(pwd)
+#print(pwd)
+
+# Covert list to string
+password =""
+
+for char in pwd:
+  password +=char
+print(password)
