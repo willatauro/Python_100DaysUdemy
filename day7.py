@@ -14,11 +14,18 @@ chosen_word =  random.choice(word_list)
 
 print(chosen_word)
 
-guess = (input("Guess a letter")).lower()
-print(guess)
+display_word =[]
+while '_' not in display_word:
+    guess = (input("Guess a letter")).lower()
+    print(guess)
+    for i in chosen_word:
+        display_word.append('_')
+  
+    for position in range(len(chosen_word)):
 
-for i in chosen_word:
-    if i in guess:
-        print(i)
+        if guess == chosen_word[position]:
+            display_word[position]= guess
 
-        
+
+print(display_word);
+
