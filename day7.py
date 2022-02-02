@@ -6,63 +6,12 @@ https://developers.google.com/edu/python/lists#for-and-in
 '''
 
 import random
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-word_list = ["ardvark", "baboon","camel"];
+from day7_part3 import stages , logo
+#word_list = ["ardvark", "baboon","camel"];
+#import day7_part2
+from day7_part2 import word_list
+
+print(logo)
 
 chosen_word =  random.choice(word_list)
 
